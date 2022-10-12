@@ -23,4 +23,4 @@ In the starter code of this repository, we have provided a python script for eva
 ```bash
 python3 for_students_eval.py --pred_file <path to your prediction csv file> --gt_file <path to the ground-truth csv file>
 ```
-![image](https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/final_project/poster.pdf)
+![image](https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/final_project/poster.png)
