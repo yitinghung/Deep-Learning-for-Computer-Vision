@@ -1,4 +1,16 @@
 # DLCV HW1
+## Description
+### Problem 1: Image Classification
+Perform image classification by training a CNN model to predict a label for each image.
+* Input: RGB images
+* Output: Classification label
+* Model Evaluation: Accuracy
+### Problem 2: Semantic Segmentation
+Perform semantic segmentation by training a CNN model to predict the label for each pixel in an image.
+* Input : RGB image
+* Output : Semantic segmentation/prediction
+* Model Evaluation: mean Intersection over Union (mIoU)
+
 ## Usage
 ```
 git clone https://github.com/yitinghung/Deep-Learning-for-Computer-Vision.git
