@@ -1,10 +1,10 @@
 # DLCV HW3
 ## Description
 ### Problem 1: Image Classification with Vision Transformer
-* Train a Vision Transformer for image classification.
-&emsp;&emsp;&emsp;&emsp;Input: RGB image     
-&emsp;&emsp;&emsp;&emsp;Ouput: Classification label      
-&emsp;&emsp;&emsp;&emsp;Evaluation metric: Accuracy
+* Train a Vision Transformer for image classification.      
+&emsp;&emsp;&emsp;Input: RGB image     
+&emsp;&emsp;&emsp;Ouput: Classification label      
+&emsp;&emsp;&emsp;Evaluation metric: Accuracy
 * Visualize position embeddings.
 * Visualize attention map.
 
