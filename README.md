@@ -58,7 +58,7 @@ NTU EE Course lectured by PhD.Yu-Chiang Frank Wang
 * N-way K-shot sampling
 * Evaluation: 95% confidence interval of the accuracy over episodes
 
-###Problem 2: Self-Supervised Pre-training for Image Classification 
+### Problem 2: Self-Supervised Pre-training for Image Classification 
 * Image classification
 * Self-supervised learning
 * Bootstrap Your Own Latent (BYOL)
