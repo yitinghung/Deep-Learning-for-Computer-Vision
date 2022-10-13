@@ -15,4 +15,4 @@ else
 fi
 
 # Example
-python3 ./p1/Test.py -i $1 -o $2
+python3 Test.py -i $1 -o $2

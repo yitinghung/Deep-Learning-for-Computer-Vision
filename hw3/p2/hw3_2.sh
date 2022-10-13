@@ -15,4 +15,4 @@ else
 fi
 
 # Example
-python3 ./p2/predict.py -i $1 -o $2
+python3 predict.py -i $1 -o $2
