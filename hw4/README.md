@@ -1,37 +1,70 @@
-# DLCV-Fall-2021-HW4
+# DLCV HW4
+## Description
+### Problem 1: Few-Shot Learning - Prototypical Network 
+* Prototypical Networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class.
+* Implement the prototypical network as your baseline model to perform 5-way K-shot classification. (K=1, 5, 10)
+* Model Evaluation: Report the 95% confidence interval of the accuracy over 600 episodes. In each episode, the accuracy is calculated over totally N * 15 query data where each way has 15 query data (N-way K-shot setting).
+$$ \bar{x}\pm1.96x\frac{\sigma}{\sqrt{600}}$$
 
-
-Please refer to [hw4_intro.pdf](https://drive.google.com/drive/folders/19KSzhJyGjEkh-pKUds26LwN9IQ5SUSOf?usp=sharing) for HW4 details and rules. **Note that all of hw4 videos and introduction pdf files can be accessed in your NTU COOL.**
+### Problem 2: Self-Supervised Pre-training for Image Classification
+* Pre-train ResNet50 backbone on Mini-ImageNet via the recently self-supervised learning methods (this repo use [BYOL](https://github.com/lucidrains/byol-pytorch)). 
+* After pretraining, you can conduct downstream task (i.e., image classification) with different settings to analyze your pre-trained backbone. 
 
 ## Usage
-To start working on this assignment, you should clone this repository into your local machine by using the following command.
-```bash
-    git clone https://github.com/DLCV-Fall-2021/HW4-<username>.git
 ```
-Note that you should replace `<username>` with your own GitHub username.
-
-## Install Packages
-To install the packages automatically, we have provided a "requirements.txt" file for this homework. Please use the following script to set up the environment.
-```bash
-pip install -r requirements.txt
+git clone https://github.com/yitinghung/Deep-Learning-for-Computer-Vision.git
+cd hw4/
 ```
 
 ## Dataset
-In the starter code of this repository, we have provided a shell script for downloading and extracting the dataset for this assignment. For Linux users, simply use the following command.
-```bash
+```
 bash ./get_dataset.sh
 ```
 The shell script will automatically download the dataset and store the data in a folder called `hw4_data`. Note that this command by default only works on Linux. If you are using other operating systems, you should download the dataset from [this link](https://drive.google.com/drive/folders/19KSzhJyGjEkh-pKUds26LwN9IQ5SUSOf?usp=sharing) and unzip the compressed file manually.
 
-> ⚠️ ***IMPORTANT NOTE*** ⚠️  
-> You should keep a copy of the dataset only in your local machine. **DO NOT** upload the dataset to this remote repository. If you extract the dataset manually, be sure to put them in a folder called `hw4_data` under the root directory of your local repository so that it will be included in the default `.gitignore` file.
+## Install Packages
+```
+pip3 install -r requirements.txt
+```
 
-## Submission Rules
-### Deadline
-111/01/04 (Tue.) 02:00 AM (GMT+8)
+## Implementations
+### Problem 1: Few-Shot Learning - Prototypical Network
+#### Train
+```
+python train.py
+```
+#### Download Checkpoints
+```
+bash ../hw4_download.sh
+```
+#### Inference
+```
+bash hw4_p1.sh <test_csv> <test_dataset_dir> <test_case_csv> <output_csv>
+```
+#### Evaluation
+```
+python eval.py <output_csv> <ground_truth_csv>
+```
 
-## Q&A
-If you have any problems related to HW4, you may
-- Use TA hours
-- Contact TAs by e-mail ([ntudlcv@gmail.com](mailto:ntudlcv@gmail.com))
-- Post your question under hw4 Discussion section in NTU COOL
+### Problem 2: Self-Supervised Pre-training for Image Classification
+#### Train
+Training using BYOL
+```
+train_BYOL.py
+```
+compare with supervised learning
+```
+train_finetune.py
+```
+#### Download Checkpoints
+```
+bash ../hw4_download.sh
+```
+#### Inference
+```
+bash hw4_p2.sh <test_csv> <test_dataset_dir> <output_csv>
+```
+
+
+
+
