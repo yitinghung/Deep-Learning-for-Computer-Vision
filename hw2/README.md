@@ -7,18 +7,23 @@ This repository implement the models of both GAN and ACGAN for generating human 
 * Evaluation:    
 1. Fréchet inception distance (FID)
 2. Inception score (IS)
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw2/p1_figure.png" width=50% height=50%>
+
 ### Problem 2: Image Generation and Feature Disentanglement - ACGAN
 * Auxiliary Classifier GAN (ACGAN) is a conditional GAN method applying auxiliary classifers for conditional image synthesis and feature disentanglement.
 * Aim to generate images for the corresponding digit inputs
 * Implement an ACGAN model from scratch and train it on the mnistm dataset
 * Evaluation:   
 Evaluate the generated output by the classification accuracy with a pretrained digit classifier
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw2/p2_figure.png" width=50% height=50%>
+
 ### Problem 3: Unsupervised Domain Adaptation (UDA) - DANN
 * Implement DANN on digits datasets (USPS, MNIST-M and SVHN) and consider the following 3 scenarios:    
 SVHN → MNIST-M, MNIST-M → USPS, USPS → SVHN   (Source domain → Target domain)
 \*Note that during training DANN, we utilize the images and labels of source domain, and only images (without labels) of target domain.
 * Evaluation:
 Accuracy on target domain
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw2/p3_figure.png" width=50% height=50%>
 
 ## Usage
 ```
