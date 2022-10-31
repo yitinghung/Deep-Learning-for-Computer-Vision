@@ -5,11 +5,14 @@ Perform image classification by training a CNN model to predict a label for each
 * Input: RGB images
 * Output: Classification label
 * Model Evaluation: Accuracy
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw1/p1_figure.png" width=50% height=50%>
+
 ### Problem 2: Semantic Segmentation
 Perform semantic segmentation by training a CNN model to predict the label for each pixel in an image.
 * Input : RGB image
 * Output : Semantic segmentation/prediction
 * Model Evaluation: mean Intersection over Union (mIoU)
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw1/p2_figure.png" width=50% height=50%>
 
 ## Usage
 ```
