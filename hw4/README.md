@@ -5,10 +5,12 @@
 * Implement the prototypical network as your baseline model to perform 5-way K-shot classification. (K=1, 5, 10)
 * Model Evaluation: Report the 95% confidence interval of the accuracy over 600 episodes. In each episode, the accuracy is calculated over totally N * 15 query data where each way has 15 query data (N-way K-shot setting).
 $$ \bar{x}\pm1.96x\frac{\sigma}{\sqrt{600}}$$
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw4/p1_figure.png" width=50% height=50%>
 
 ### Problem 2: Self-Supervised Pre-training for Image Classification
 * Pre-train ResNet50 backbone on Mini-ImageNet via the recently self-supervised learning methods (this repo use [BYOL](https://github.com/lucidrains/byol-pytorch)). 
 * After pretraining, you can conduct downstream task (i.e., image classification) with different settings to analyze your pre-trained backbone. 
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw4/p2_figure.png" width=50% height=50%>
 
 ## Usage
 ```
