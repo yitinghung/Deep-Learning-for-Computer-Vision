@@ -7,12 +7,12 @@
 &emsp;&emsp;&emsp;Evaluation metric: Accuracy
 * Visualize position embeddings.
 * Visualize attention map.
-<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw3/p1_figure.png" width=50% height=50%>
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw3/p1_figure.png" width=60% height=60%>
 
 ### Problem 2: Visualization of Attention in Image Captioning
 * Analyze the transformer decoder in image captioning by visualizing the cross-attention between images and generated captions.
 * Given an input image, your model would be able to generate a corresponding caption sequentially, and you have to visualize the cross-attention between the image patches and each predicted word in your own caption.
-<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw3/p2_figure.png" width=40% height=40%>
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw3/p2_figure.png" width=60% height=60%>
 
 ## Usage
 ```
