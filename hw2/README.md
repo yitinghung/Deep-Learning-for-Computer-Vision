@@ -15,7 +15,7 @@ This repository implement the models of both GAN and ACGAN for generating human 
 * Implement an ACGAN model from scratch and train it on the mnistm dataset
 * Evaluation:   
 Evaluate the generated output by the classification accuracy with a pretrained digit classifier
-<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw2/p2_figure.png" width=50% height=50%>
+<img src="https://github.com/yitinghung/Deep-Learning-for-Computer-Vision/blob/main/hw2/p2_figure.png" width=40% height=40%>
 
 ### Problem 3: Unsupervised Domain Adaptation (UDA) - DANN
 * Implement DANN on digits datasets (USPS, MNIST-M and SVHN) and consider the following 3 scenarios:    
